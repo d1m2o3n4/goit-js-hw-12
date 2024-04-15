@@ -37,11 +37,15 @@
   background: #6c8cff;
 }
 .gallery-list {
+  max-width: 1140px;
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 24px;
   justify-content: center;
+  align-items: center;
   margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .gallary-item {
   border: 1px solid #808080;
@@ -49,6 +53,7 @@
 .gallary-link > img {
   width: 360px;
   height: 200px;
+  object-fit: cover;
 }
 .photo-legend {
   font-weight: 600;
@@ -136,4 +141,22 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+.add-more-btn {
+  display: block;
+  margin: 32px auto 20px;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 125px;
+  height: 40px;
+  background: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+.add-more-btn:hover {
+  background-color: #6c8cff;
 }
