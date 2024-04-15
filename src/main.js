@@ -85,7 +85,7 @@ async function submitForm(event) {
   // galleryInput.value = '';
 }
 async function onClick() {
-  page += 1;
+  page +=;
   try {
     const {
       data: { hits, total },
