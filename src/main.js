@@ -41,6 +41,7 @@ async function submitForm(event) {
       });
     }
     if (!searchName || hits.length === 0) {
+      galleryInput.value = '';
       return iziToast.error({
         position: 'topRight',
         message:
